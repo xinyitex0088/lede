@@ -103,9 +103,9 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_x86=y
-          CONFIG_TARGET_x86_64=y
-          CONFIG_TARGET_x86_64_Generic=y
+          CONFIG_TARGET_Allwinner A1x/A20/A3x=y
+          CONFIG_TARGET_Allwinner A64=y
+          CONFIG_TARGET_Xunlong Orange Pi Zero Plus=y
           EOF
 
           # 固件压缩:
